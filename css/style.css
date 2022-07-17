@@ -121,6 +121,7 @@ footer .row {
 /* ------------------------------- Card style ------------------------------- */
 .card {
   background-color: var(--cd-color-light-dark);
+  overflow: hidden;
 }
 
 /* ------------------------------ Card Design 33 ----------------------------- */
