@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root {
+  --cd-color-light-dark: #201c2b;
+  --cd-color-dark: #14121c;
+  --cd-color-white: #ffffff;
+  --cd-color-blue: #47cdee;
+  --cd-color-purple: #520bad;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  box-shadow: none !important;
+}
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'inter';
+  color: var(--cd-color-white);
+  background-color: var(--cd-color-dark);
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Globel style                                */
+/* -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.rounded-10 {
+  border-radius: 10px;
+}
+/* ------------------------------ Footer style ------------------------------ */
+
+.weburl {
+  font-size: 18px;
+  -webkit-animation: colorchange 0.5s infinite alternate;
+}
+@-webkit-keyframes colorchange {
+  0% {
+    color: var(--cd-color-blue);
+  }
+  100% {
+    color: var(--cd-color-purple);
+  }
+}
+/* ------------------------------ header style ------------------------------ */
+.navbar-light,
+footer .row {
+  background-color: var(--cd-color-dark) !important;
+  border: 1px solid var(--cd-color-light-dark) !important;
+}
+.site-logo img {
+  transition: all 0.3s;
+}
+.site-logo:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.social .social-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--cd-color-purple);
+  background: -moz-linear-gradient(130deg, #520bad 0%, #2fccef 100%);
+  background: -webkit-linear-gradient(130deg, #520bad 0%, #2fccef 100%);
+  background: linear-gradient(130deg, #520bad 0%, #2fccef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#520BAD ",endColorstr="#2FCCEF  ",GradientType=1);
+  border-radius: 7px;
+  margin: 0px 2px;
+}
+.social .social-icon i {
+  color: var(--cd-color-white);
+  transition: all 0.3s;
+}
+.social .social-icon:hover i {
+  color: #000000;
+}
+@media (max-width: 575px) {
+  .social {
+    max-width: 200px;
+  }
+  .social .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .social .social-icon i {
+    font-size: 16px;
+  }
+}
+/* ------------------------------- Card style ------------------------------- */
+.card {
+  background-color: var(--cd-color-light-dark);
+}
+
+/* ------------------------------ Card Design 33 ----------------------------- */
+.cd-33 a.btn {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+.cd-33 a.btn {
+  background-color: var(--cd-color-blue);
+  border-color: var(--cd-color-blue);
+  color: var(--cd-color-dark);
+}
+.cd-33 a.btn:hover {
+  background-color: var(--cd-color-purple);
+  border-color: var(--cd-color-purple);
+  color: var(--cd-color-white);
+}
+.cd-33 .progress-box .progress-num {
+  font-size: 11px;
+  line-height: 22px;
+}
+.cd-33 .list-style-circle li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.cd-33 .list-style-circle li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+/* ------------------------------ Card Design 34 ----------------------------- */
+.cd-34 .card-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.cd-34 a.btn {
+  font-size: 13px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+.cd-34 a.btn {
+  background-color: var(--cd-color-blue);
+  border-color: var(--cd-color-blue);
+  color: var(--cd-color-dark);
+}
+.cd-34 a.btn:hover {
+  background-color: var(--cd-color-purple);
+  border-color: var(--cd-color-purple);
+  color: var(--cd-color-white);
+}
+
+/* ------------------------------ Card Design 35 ----------------------------- */
+.cd-35 .card-header {
+  background: rgb(82, 11, 173);
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(82, 11, 173, 1) 0%,
+    rgba(71, 205, 238, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(82, 11, 173, 1) 0%,
+    rgba(71, 205, 238, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(82, 11, 173, 1) 0%,
+    rgba(71, 205, 238, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#520bad",endColorstr="#47cdee",GradientType=1);
+  min-height: 60px;
+}
+.cd-35 .card-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: -50px;
+}
+
+/* ------------------------------ Card Design 36 ----------------------------- */
+.cd-36 .card-img img {
+  width: 70px;
+  height: 70px;
+}
+.cd-36 .card-body .card-title {
+  font-size: 17 px;
+}
+
+/* ------------------------------ Card Design 37 ----------------------------- */
+.cd-37 .card-img img {
+  width: 50px;
+  height: 50px;
+}
+
+/* ------------------------------ Card Design 38 ----------------------------- */
+
+.cd-38 .list-style-circle li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.cd-38 .list-style-circle li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+/* ------------------------------ Card Design 39 ----------------------------- */
+.cd-39 a.btn {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+.cd-39 .card-body ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+/* ------------------------------ Card Design 40 ----------------------------- */
+.cd-40 .card-head img {
+  transition: all 0.3s;
+}
+.cd-40:hover .card-head img {
+  transform: scale(1.2);
+}
+.cd-40 .card-body .card-img {
+  width: 30px;
+  height: 30px;
+}
+.cd-40 .tags li a {
+  font-size: 11px;
+  color: var(--cd-color-white);
+  border-color: var(--cd-color-white);
+  background-color: transparent;
+  font-weight: 200;
+  transition: all 0.3s;
+}
+.cd-40 .tags li a:hover {
+  background-color: var(--cd-color-blue);
+  border-color: var(--cd-color-blue) !important;
+  color: var(--cd-color-dark);
+}
